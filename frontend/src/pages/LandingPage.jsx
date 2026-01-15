@@ -383,26 +383,25 @@ const LandingPage = () => {
             <p className="text-text-subtle text-lg">{ADDONS_DATA.description}</p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-5">
-            {ADDONS_DATA.addons.map((addon, i) => {
-              const IconComponent = iconMap[addon.icon];
-              return (
+          <div className="grid md:grid-cols-3 gap-6">
+            {ADDONS_DATA.addons.map((addon, i) => (
+              <div
+                key={i}
+                className="bg-white rounded-2xl overflow-hidden border border-text-base/5 shadow-lg hover:shadow-xl transition-shadow group"
+              >
                 <div
-                  key={i}
-                  className="bg-white rounded-2xl p-6 border border-text-base/5 shadow-lg shadow-text-base/5 flex gap-4"
-                >
-                  <div className="w-14 h-14 rounded-full bg-gradient-to-br from-accent-tangerine/10 to-accent-yellow/15 border border-text-base/5 flex items-center justify-center flex-shrink-0">
-                    {IconComponent && <IconComponent size={24} className="text-accent-tangerine" />}
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg text-text-base">{addon.title}</h3>
-                    <p className="text-text-subtle mt-1">
-                      <strong className="text-accent-tangerine">{addon.price}</strong> — {addon.description}
-                    </p>
-                  </div>
+                  className="h-52 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                  style={{ backgroundImage: `url(${IMAGES[addon.image]})` }}
+                />
+                <div className="p-5">
+                  <h3 className="font-display font-bold text-xl text-text-base">{addon.title}</h3>
+                  <p className="text-text-subtle mt-2">
+                    <strong className="text-accent-tangerine text-lg">{addon.price}</strong>
+                  </p>
+                  <p className="text-text-subtle font-medium mt-1">{addon.description}</p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
       </section>
