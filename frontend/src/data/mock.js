@@ -14,6 +14,7 @@ export const NAV_LINKS = [
   { id: 'packages', label: 'Packages' },
   { id: 'how-it-works', label: 'How it works' },
   { id: 'gallery', label: 'Gallery' },
+  { id: 'videos', label: 'Videos' },
   { id: 'faq', label: 'FAQ' },
   { id: 'contact', label: 'Contact' },
 ];
