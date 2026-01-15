@@ -258,6 +258,30 @@ const LandingPage = () => {
               );
             })}
           </div>
+
+          {/* Meet the Team */}
+          <div className="mt-16 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white rounded-2xl overflow-hidden border border-text-base/5 shadow-lg group">
+              <div
+                className="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                style={{ backgroundImage: `url(${IMAGES.owner})` }}
+              />
+              <div className="p-5">
+                <h3 className="font-display font-bold text-xl text-text-base">Meet the Founder</h3>
+                <p className="text-text-subtle font-medium mt-1">Bringing Turkish ice cream magic to Jakarta since 2011</p>
+              </div>
+            </div>
+            <div className="bg-white rounded-2xl overflow-hidden border border-text-base/5 shadow-lg group">
+              <div
+                className="h-64 bg-cover bg-center transition-transform duration-500 group-hover:scale-105"
+                style={{ backgroundImage: `url(${IMAGES.ownerSerdal})` }}
+              />
+              <div className="p-5">
+                <h3 className="font-display font-bold text-xl text-text-base">Our Showman</h3>
+                <p className="text-text-subtle font-medium mt-1">Professional Turkish ice cream performer & entertainer</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
