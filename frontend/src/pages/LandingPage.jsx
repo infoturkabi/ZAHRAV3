@@ -24,6 +24,7 @@ import {
   Handshake,
   CheckCircle,
   MessageCircle,
+  Play,
 } from 'lucide-react';
 import {
   IMAGES,
@@ -34,6 +35,7 @@ import {
   ADDONS_DATA,
   HOW_IT_WORKS_DATA,
   GALLERY_DATA,
+  VIDEOS_DATA,
   FAQ_DATA,
   TRUSTED_DATA,
   REQUIREMENTS_DATA,
