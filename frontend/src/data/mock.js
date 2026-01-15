@@ -1,7 +1,11 @@
 // ZAHRA Turkish Ice Cream - Mock Data
 
 export const IMAGES = {
-  hero: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/qhnubmvy_crowd.jpg',
+  hero: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/81an4530_hero.jpg',
+  turkishIceCream: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/ops5zmtb_turkish%20ice%20cream.JPG',
+  ownerSerdal: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/z8c7xlk9_zahra%20owner%20serdal.png',
+  owner: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/ol1c2z8o_zahra%20owner.JPG',
+  logo: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/87sn1l1e_ZAHRATurkishIceCreamlogo.jpg',
   child: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/1iqzvaxd_child.jpg',
   child2: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/79c5tver_child2.jpg',
   couple: 'https://customer-assets.emergentagent.com/job_zahra-turkish-ice/artifacts/q1gnk12y_couple.jpg',
