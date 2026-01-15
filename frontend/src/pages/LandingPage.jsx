@@ -424,6 +424,60 @@ const LandingPage = () => {
         </div>
       </section>
 
+      {/* Videos Section */}
+      <section id="videos" className="py-20 lg:py-28 bg-gradient-to-b from-coconut to-coconut-dark">
+        <div className="container mx-auto px-5">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <span className="inline-block px-4 py-2 rounded-full bg-accent-tangerine/10 text-accent-tangerine font-bold text-sm mb-4">
+              {VIDEOS_DATA.tag}
+            </span>
+            <h2 className="font-display text-3xl md:text-4xl font-black text-text-base mb-4">
+              {VIDEOS_DATA.title}
+            </h2>
+            <p className="text-text-subtle text-lg">{VIDEOS_DATA.description}</p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {VIDEOS_DATA.videos.map((video, i) => (
+              <div
+                key={i}
+                className="rounded-2xl overflow-hidden border border-text-base/5 bg-white shadow-lg shadow-text-base/5 group hover:shadow-xl transition-shadow"
+              >
+                <div className="relative aspect-video">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="font-bold text-text-base line-clamp-1">{video.title}</h3>
+                  <p className="text-sm text-text-subtle font-medium mt-1">{video.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href="https://www.youtube.com/@zahraturkishicecream4421"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                variant="outline"
+                className="rounded-full px-6 py-3 font-bold border-2 border-accent-tangerine/30 hover:border-accent-tangerine hover:bg-accent-tangerine/5 transition-colors"
+              >
+                <Play size={18} className="mr-2" />
+                Watch More on YouTube
+              </Button>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Trusted Section */}
       <section className="py-20 lg:py-28 bg-gradient-to-b from-coconut to-coconut-dark">
         <div className="container mx-auto px-5">
