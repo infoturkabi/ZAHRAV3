@@ -1,0 +1,17 @@
+[build]
+  # Directory to change to before starting a build
+  base = "frontend/"
+  # Directory that contains the deploy-ready HTML files
+  publish = "build/"
+  # Build command
+  command = "yarn build"
+
+[build.environment]
+  # Node version
+  NODE_VERSION = "18"
+
+# Redirects for Single Page Application (SPA) routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
